@@ -2,3 +2,12 @@
 5 -> 2, 4
 8 -> 2, 4, 6, 8
 */
+
+
+Console.WriteLine("Введите число: ");
+int number = Math.Abs(int.Parse(Console.ReadLine()));
+for (int i = 1; i <= number; i++)
+{
+    if (i % 2 == 0)
+    Console.Write($"{i} ");
+}
