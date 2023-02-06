@@ -13,21 +13,20 @@ int NumberRequest(string message)
 
 int enteredNumber = NumberRequest("Enter number: ");
 
-
-
-/*if (enteredNumber >= 100)
+while (enteredNumber <= 100); 
+  if (enteredNumber >999)
 {
-    while (enteredNumber > 999)
-    {
-        enteredNumber = enteredNumber / 10;
-    }
+    enteredNumber = enteredNumber / 10;
     result = enteredNumber % 10;
     return result;
-Console.WriteLine($"Третья цифра : {result} ");   
+    {
+        Console.WriteLine($"Третья цифра : {result} ");
+    }
 }
 
-if else
+  else
 {
     Console.WriteLine("Третьей цифры нет");
 }
-*/
+
+
