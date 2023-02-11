@@ -3,7 +3,7 @@
 78 -> третьей цифры нет
 32679 -> 6
 */
-
+/*
 int NumberRequest(string message)
 {
     Console.WriteLine(message);
@@ -24,9 +24,26 @@ while (enteredNumber <= 100);
     }
 }
 
-  else
+else
 {
     Console.WriteLine("Третьей цифры нет");
 }
+*/
 
-
+int GetNumbers(string message)
+{
+Console.WriteLine(message);
+int number = Convert.ToInt32(Console.ReadLine());
+return number;
+}
+int number = GetNumbers("Введите число");
+int n = number;
+if (number<100)
+{
+Console.WriteLine("Третьей цифры нет!");
+}
+while (n>1000)
+{
+n=n/10;
+}
+Console.WriteLine($"Третья цифра числа {number} = {n%10}");
